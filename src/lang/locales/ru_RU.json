@@ -116,5 +116,29 @@
   "sidenav.errors.error.2": "Страница ошибки 2",
   "sidenav.docs": "Документы",
   "sidenav.docs.documentation": "Документация",
-  "sidenav.docs.changelog": "Изменения"
+  "sidenav.docs.changelog": "Изменения",
+
+  "sidenav.basic": "Основные",
+  "sidenav.basic.default": "Дашборд",
+  "sidenav.basic.catalog": "Каталог",
+  "sidenav.basic.catalog.products": "Товары",
+  "sidenav.basic.catalog.categories": "Категории",
+  "sidenav.basic.catalog.collections": "Коллекции",
+  "sidenav.basic.catalog.combo": "Комбо",
+  "sidenav.basic.orders": "Заказы",
+  "sidenav.basic.clients": "Клиенты",
+  "sidenav.basic.clients.clientsList": "Список клиентов",
+  "sidenav.basic.clients.clientsGroups": "Группы клиентов",
+  "sidenav.basic.banners": "Баннеры",
+  "sidenav.basic.promocodes": "Промокоды",
+  "sidenav.basic.offlinePoints": "Оффлайн точки",
+  "sidenav.basic.offlinePoints.addresses": "Адреса",
+  "sidenav.basic.offlinePoints.geozones": "Адреса",
+  "sidenav.basic.employees": "Сотрудники",
+  "sidenav.basic.mailings": "Рассылки",
+
+  "sidenav.system": "Системные",
+  "sidenav.system.settings": "Настройки",
+  "sidenav.system.mobileApp": "Мобильное приложение",
+  "sidenav.system.logs": "Логи"
 }
