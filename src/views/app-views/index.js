@@ -11,7 +11,12 @@ export const AppViews = () => {
           path={`${APP_PREFIX_PATH}/home`}
           component={lazy(() => import(`./home`))}
         />
-        {/* <Redirect from={`${APP_PREFIX_PATH}`} to={`${APP_PREFIX_PATH}/home`} /> */}
+        <Route
+          path={`${APP_PREFIX_PATH}/basics/clients/clientsList`}
+          component={lazy(() => import(`./user-list`))}
+        />
+
+        <Redirect from={`${APP_PREFIX_PATH}`} to={`${APP_PREFIX_PATH}/home`} />
       </Switch>
     </Suspense>
   );
