@@ -3,6 +3,7 @@ import {
   CLIENTS_LOADING_ERROR,
   CLIENTS_LOADING_SUCCESS,
   SET_SELECTED_CLIENT,
+  UPDATE_SELECTED_CLIENT,
 } from "../constants/Clients";
 
 const initState = {
@@ -38,6 +39,12 @@ const clients = (state = initState, action) => {
       return {
         ...state,
         selectedClient: action.payload,
+      };
+    }
+    case UPDATE_SELECTED_CLIENT: {
+      return {
+        ...state,
+        loading: true,
       };
     }
     default:

@@ -4,34 +4,19 @@ import { EyeOutlined } from "@ant-design/icons";
 import AvatarStatus from "components/shared-components/AvatarStatus";
 import { connect } from "react-redux";
 import { requstClients, setSelectedClient } from "redux/actions/Clients";
-import _ from "lodash";
 
 export class UserList extends Component {
   componentDidMount() {
     this.props.requstClients();
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (
-  //     !_.isEqual(this.props.clientsList.length, prevProps.clientsList.length)
-  //   ) {
-  //     this.setState({
-  //       users: this.props.clientsList,
-  //       isClientsLoading: this.props.loading,
-  //     });
-  //   }
-  // }
-
-  // showUserProfile = (userInfo) => {
-  //   this.setState({
-  //     userProfileVisible: true,
-  //     selectedUser: userInfo,
-  //   });
-  // };
+  editUserProfile = (userInfo) => {
+    this.props.setSelectedClient(userInfo);
+    this.props.history.push("/app/setting/edit-profile");
+  };
 
   render() {
-    const { clientsList, selectedClient, setSelectedClient, loading } =
-      this.props;
+    const { clientsList, loading } = this.props;
 
     const tableColumns = [
       {
@@ -84,7 +69,7 @@ export class UserList extends Component {
                 className="mr-2"
                 icon={<EyeOutlined />}
                 onClick={() => {
-                  this.showUserProfile(elm);
+                  this.editUserProfile(elm);
                 }}
                 size="small"
               />
@@ -107,11 +92,9 @@ export class UserList extends Component {
   }
 }
 
-// export default UserList;
-
 const mapStateToProps = ({ clients }) => {
-  const { clientsList, loading, selectedUser } = clients;
-  return { clientsList, loading, selectedUser };
+  const { clientsList, loading } = clients;
+  return { clientsList, loading };
 };
 
 const mapDispatchToProps = {

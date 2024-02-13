@@ -15,6 +15,10 @@ export const AppViews = () => {
           path={`${APP_PREFIX_PATH}/basics/clients/clientsList`}
           component={lazy(() => import(`./user-list`))}
         />
+        <Route
+          path={`${APP_PREFIX_PATH}/setting/edit-profile`}
+          component={lazy(() => import(`./setting`))}
+        />
 
         <Redirect from={`${APP_PREFIX_PATH}`} to={`${APP_PREFIX_PATH}/home`} />
       </Switch>
