@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Button, Input, Row, Col, message, Spin } from "antd";
+import { Form, Button, Input, Row, Col, message, Spin, Empty } from "antd";
 import { ROW_GUTTER } from "constants/ThemeConstant";
 import { connect } from "react-redux";
 import { updateSelectedClient } from "redux/actions/Clients";
@@ -19,6 +19,12 @@ export class EditProfile extends Component {
     const onFinishFailed = (errorInfo) => {
       console.log("Failed:", errorInfo);
     };
+
+    if (!this.props.selectedClient) {
+      this.props.history.push("/app/basics/clients/clientsList");
+
+      return <Empty />;
+    }
 
     const {
       name,

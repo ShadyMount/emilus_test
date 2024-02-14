@@ -3,7 +3,7 @@ const dev = {
 };
 
 const prod = {
-  API_ENDPOINT_URL: "https://jsonplaceholder.typicode.com",
+  API_ENDPOINT_URL: "https://emilus-3b819.web.app",
 };
 
 const test = {

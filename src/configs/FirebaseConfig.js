@@ -1,13 +1,10 @@
 const FirebaseConfig = {
-  apiKey: 'AIzaSyAOWoRQGoegkmwnCca7B2GG5GUG_ZP1lcM',
-  authDomain: 'emilus.firebaseapp.com',
-  databaseURL: 'https://emilus.firebaseio.com',
-  projectId: 'emilus',
-  storageBucket: 'emilus.appspot.com',
-  messagingSenderId: '807555350717',
-  appId: '1:807555350717:web:145ba7c21af47203a2f7d4',
-  measurementId: 'G-8KE7HJB252'
+  apiKey: "AIzaSyB601q3sBlAmFnSM6Jnj9Pp5kZHxQ1sknw",
+  authDomain: "emilus-3b819.firebaseapp.com",
+  projectId: "emilus-3b819",
+  storageBucket: "emilus-3b819.appspot.com",
+  messagingSenderId: "866953668677",
+  appId: "1:866953668677:web:fb62eac2847b2509459b2c",
 };
 
-export default FirebaseConfig
-
+export default FirebaseConfig;
